@@ -13,14 +13,14 @@ import { createStructuredSelector } from "reselect";
 const Header = ({ currentUser, hidden }) => {
   return (
     <div className="header">
-      <Link className="logo-container" to="/crwn-clothing">
+      <Link className="logo-container" to="/crwn-clothing/">
         <Logo className="logo" />
       </Link>
       <div className="options">
-        <Link className="option" to="/crwn-clothing/shop">
+        <Link className="option" to="/crwn-clothing/shop/">
           SHOP
         </Link>
-        <Link className="option" to="/crwn-clothing/contact">
+        <Link className="option" to="/crwn-clothing/contact/">
           CONTACT
         </Link>
         {console.log("inside header:", currentUser)}
