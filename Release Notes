@@ -1,0 +1,12 @@
+RELEASE 1.0.0
+- Homepage
+- Shoppage
+- User Signup
+- User Login
+    a. Email/Password
+    b. Google account
+- User authentication using Firebase
+
+RELEASE 1.0.1 (Coming Soon!)
+- Checkout Page
+- Payment Interface
