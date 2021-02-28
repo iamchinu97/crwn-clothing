@@ -2,9 +2,12 @@ import React, { Component } from "react";
 import "./App.css";
 import Homepage from "./pages/Homepage/Homepage";
 import { Switch, Route, Redirect } from "react-router-dom";
+
+import Checkoutpage from "./pages/Checkoutpage/Checkoutpage";
 import Shoppage from "./pages/Shoppage/Shoppage";
 import Header from "./Components/Header/Header";
 import UserAuthenticationPage from "./pages/UserAuthenticationPage/UserAuthenticationPage";
+
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { connect } from "react-redux";
 import { setCurrentUser } from "./redux/user/user.actions";
@@ -45,6 +48,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/crwn-clothing" component={Homepage} />
           <Route path="/crwn-clothing/shop" component={Shoppage} />
+          <Route path="/crwn-clothing/checkout" component={Checkoutpage} />
           <Route
             exact
             path="/crwn-clothing/signin"
@@ -52,8 +56,8 @@ class App extends Component {
               this.props.currentUser ? (
                 <Redirect to="/crwn-clothing" />
               ) : (
-                <UserAuthenticationPage />
-              )
+                  <UserAuthenticationPage />
+                )
             }
           />
         </Switch>
