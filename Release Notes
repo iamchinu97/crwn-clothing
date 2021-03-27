@@ -7,6 +7,18 @@ RELEASE 1.0.0
     b. Google account
 - User authentication using Firebase
 
-RELEASE 1.0.1 (Coming Soon!)
+RELEASE 1.0.1 - Live!
 - Checkout Page
-- Payment Interface
+- Category Pages
+- Payment Interface : Stripe (Credit card)
+
+RELEASE 1.0.2 (Coming Soon!)
+- Payment Interface : Razorpay (Credit card, Net Banking, BHIM UPI)
+- Optimization : Moving Shop Data to Firebase
+- Optimization : Redux Saga
+    a. Google Sign In
+    b. Email Sign In
+
+RELEASE 1.0.3 (Future Release)
+- Optimization : Class Components to Hooks
+- Optimization : Mobile Responsive Site
